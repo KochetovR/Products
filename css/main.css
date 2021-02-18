@@ -322,12 +322,15 @@ p {
 @media screen and (min-width: 768px) {
   .products__container {
     width: 700px;
+    padding-bottom: 110px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .products__container {
     width: 1045px;
+    padding-top: 130px;
+    padding-bottom: 0px;
   }
 }
 
@@ -375,7 +378,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .products__title {
     font-size: 58px;
     line-height: 1.14;
@@ -387,12 +390,18 @@ p {
   margin-right: auto;
   margin-left: auto;
   margin-top: 144px;
-  margin-bottom: 98px;
 }
 
 @media screen and (min-width: 768px) {
   .products__list {
     display: flex;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__list {
+    margin-top: 260px;
   }
 }
 
@@ -456,6 +465,16 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .crem::before {
+    top: -210px;
+    left: 0;
+    width: 335px;
+    height: 335px;
+    background-image: url("../../images/products/desctop/crem-desctop.png");
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .crem::before {
     content: '';
@@ -463,6 +482,26 @@ p {
     width: 250px;
     height: 250px;
     background-size: 250px 250px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .crem::before {
+    top: -103px;
+    width: 220px;
+    height: 226px;
+    background-size: 220px 226px;
+    background-image: url("../../images/products/tablet/crem-tablet@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .crem::before {
+    top: -210px;
+    width: 335px;
+    height: 335px;
+    background-size: 335px 335px;
+    background-image: url("../../images/products/desctop/crem-desctop@2x.png");
   }
 }
 
@@ -481,6 +520,26 @@ p {
   background-image: url("../../images/products/mobile/coffee-mobile.png");
 }
 
+@media screen and (min-width: 768px) {
+  .coffee::before {
+    top: -105px;
+    left: 0;
+    width: 220px;
+    height: 226px;
+    background-image: url("../../images/products/tablet/coffee-tablet.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .coffee::before {
+    top: -210px;
+    left: 0;
+    width: 335px;
+    height: 335px;
+    background-image: url("../../images/products/desctop/coffee-desctop.png");
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .coffee::before {
     content: '';
@@ -488,6 +547,26 @@ p {
     width: 250px;
     height: 250px;
     background-size: 250px 250px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .coffee::before {
+    top: -103px;
+    width: 220px;
+    height: 226px;
+    background-size: 220px 226px;
+    background-image: url("../../images/products/tablet/coffee-tablet@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .coffee::before {
+    top: -210px;
+    width: 335px;
+    height: 335px;
+    background-size: 335px 335px;
+    background-image: url("../../images/products/desctop/coffee-desctop@2x.png");
   }
 }
 
@@ -506,6 +585,26 @@ p {
   background-image: url("../../images/products/mobile/milkshakes-mobile.png");
 }
 
+@media screen and (min-width: 768px) {
+  .milkshakes::before {
+    top: -105px;
+    left: 0;
+    width: 220px;
+    height: 226px;
+    background-image: url("../../images/products/tablet/milkshakes-tablet.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .milkshakes::before {
+    top: -210px;
+    left: 0;
+    width: 335px;
+    height: 335px;
+    background-image: url("../../images/products/desctop/milkshakes-desctop.png");
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .milkshakes::before {
     content: '';
@@ -513,6 +612,26 @@ p {
     width: 250px;
     height: 250px;
     background-size: 250px 250px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .milkshakes::before {
+    top: -103px;
+    width: 220px;
+    height: 226px;
+    background-size: 220px 226px;
+    background-image: url("../../images/products/tablet/milkshakes-tablet@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .milkshakes::before {
+    top: -210px;
+    width: 335px;
+    height: 335px;
+    background-size: 335px 335px;
+    background-image: url("../../images/products/desctop/milkshakes-desctop@2x.png");
   }
 }
 
