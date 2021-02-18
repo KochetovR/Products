@@ -1,0 +1,81 @@
+body {
+  @extend %body;
+  max-width: 1600px;
+}
+body.modal-open {
+  overflow: hidden;
+}
+.visually-hidden {
+  @extend %visually-hidden;
+}
+h2,
+h3 {
+  margin: 0;
+  color: $title-text-color;
+}
+p {
+  margin: 0;
+}
+
+.list {
+  @extend %list;
+}
+// .container {
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .container__desctop {
+//     margin-right: auto;
+//     margin-left: auto;
+//   }
+// }
+
+// .title {
+//   margin-bottom: 30px;
+//   font-family: $main-font;
+//   font-weight: bold;
+//   font-size: 28px;
+//   line-height: 1.17;
+//   text-align: center;
+//   color: $primary-black-color;
+// }
+// @media screen and (min-width: 1200px) {
+//   .title {
+//     margin-bottom: 50px;
+//     font-size: 36px;
+//   }
+// }
+// .button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-right: auto;
+//   margin-left: auto;
+//   width: 200px;
+//   height: 50px;
+//   border: none;
+//   border-radius: 4px;
+//   box-shadow: $primary-shadow;
+//   background: $accent-color;
+//   outline: 0;
+
+//   font-family: $main-font;
+//   font-size: $secondary-font-size;
+//   font-weight: $secondary-font-weight;
+//   line-height: $third-line-height;
+//   letter-spacing: $secondary-letter-spacing;
+//   color: $primary-white-color;
+// }

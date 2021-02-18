@@ -311,59 +311,12 @@ p {
   margin: 0;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container__desctop {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.title {
-  margin-bottom: 30px;
-  font-family: roboto, sans-serif;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 1.17;
-  text-align: center;
-  color: #000000;
-}
-
-@media screen and (min-width: 1200px) {
-  .title {
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
-}
-
 .products__container {
   margin-right: auto;
   margin-left: auto;
   width: 280px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -444,10 +397,11 @@ p {
 }
 
 .products__item {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 17px;
-  padding-top: 116px;
+  margin-bottom: 130px;
+  padding-top: 161px;
   width: 280px;
   height: 485px;
   border-radius: 24px;
@@ -481,15 +435,89 @@ p {
   background-color: #ffb8ca;
 }
 
+.crem::before {
+  content: '';
+  position: absolute;
+  top: -113px;
+  left: 15px;
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  background-image: url("../../images/products/mobile/crem-mobile.png");
+}
+
+@media screen and (min-width: 768px) {
+  .crem::before {
+    top: -105px;
+    left: 0;
+    width: 220px;
+    height: 226px;
+    background-image: url("../../images/products/tablet/crem-tablet.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .crem::before {
+    content: '';
+    background-image: url("../../images/products/mobile/crem-mobile@2x.png");
+    width: 250px;
+    height: 250px;
+    background-size: 250px 250px;
+  }
+}
+
 .coffee {
   background: #f0d1a5;
+}
+
+.coffee::before {
+  content: '';
+  position: absolute;
+  top: -113px;
+  left: 15px;
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  background-image: url("../../images/products/mobile/coffee-mobile.png");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .coffee::before {
+    content: '';
+    background-image: url("../../images/products/mobile/coffee-mobile@2x.png");
+    width: 250px;
+    height: 250px;
+    background-size: 250px 250px;
+  }
 }
 
 .milkshakes {
   background: #c2e297;
 }
 
+.milkshakes::before {
+  content: '';
+  position: absolute;
+  top: -113px;
+  left: 15px;
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  background-image: url("../../images/products/mobile/milkshakes-mobile.png");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .milkshakes::before {
+    content: '';
+    background-image: url("../../images/products/mobile/milkshakes-mobile@2x.png");
+    width: 250px;
+    height: 250px;
+    background-size: 250px 250px;
+  }
+}
+
 .products__item-title {
+  position: relative;
   font-family: Titan One;
   font-weight: normal;
   font-size: 20px;
@@ -501,13 +529,11 @@ p {
 }
 
 .products__item-title::after {
-  content: '';
-  display: block;
-  margin: 30px auto 0 auto;
-  border-radius: 50%;
-  width: 6px;
-  height: 6px;
-  background-color: #ffffff;
+  content: '...';
+  position: absolute;
+  top: 30px;
+  left: 44%;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -519,7 +545,7 @@ p {
 
 .products__item-text {
   display: block;
-  margin: 30px auto;
+  margin: 66px auto 60px;
   width: 200px;
   font-family: DM Sans;
   font-weight: bold;
